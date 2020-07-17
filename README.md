@@ -5,6 +5,10 @@ To check, run curl:
 
 curl server.address:5000/?hostname=< hostname >
 
-You will need to run this in the same directory as your ~/.spacecmd/config file. 
+You will need to run this Flask app in the same directory as your ~/.spacecmd/config file. 
+
+/root
+  - flaskApp.py
+  - .spacecmd/config
 
 Setting that up can be found here: https://github.com/spacewalkproject/spacewalk/wiki/spacecmd
