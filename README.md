@@ -3,7 +3,7 @@ This is a remote function to check if a host is present in Spacewalk. It can be 
 
 To check, run curl:
 
-curl server.address:5000/?hostname=< hostname >
+curl server.address:5000/?hostname=\<hostname>
 
 You will need to run this Flask app in the same directory as your ~/.spacecmd/config file. 
 
