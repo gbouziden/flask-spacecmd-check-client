@@ -17,7 +17,7 @@ def main():
     # Send Hostname to environment variable
     environ['HOSTNAME'] = hostname
     try:
-        output = subprocess.check_output(f'spacecmd --nossl system_search $HOSTNAME | spacecmd --nossl system_delete $HOSTNAME', shell=True)
+        output = subprocess.check_output(f'spacecmd --nossl system_search $HOSTNAME | spacecmd --nossl system_delete $HOSTNAME -y', shell=True)
         return output
     except subprocess.CalledProcessError as e:
         if 'non-zero' in str(e):
